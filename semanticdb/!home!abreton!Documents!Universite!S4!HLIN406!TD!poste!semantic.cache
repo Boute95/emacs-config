@@ -1,0 +1,187 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("poste" package nil nil [1 15])
+            ("java.util.ArrayList" include nil nil [16 43])
+            ("SacPostal" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("capacite" variable
+                       (:typemodifiers ("private")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [75 98])
+                    ("capaciteOrdinaire" variable
+                       (:typemodifiers ("private")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [103 135])
+                    ("volumeToile" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [140 188])
+                    ("SacPostal" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [244 317])
+                    ("SacPostal" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("capacite" variable (:type "float") (reparse-symbol formal_parameters) [344 358]))                          )
+                        (reparse-symbol class_member_declaration) [327 422])
+                    ("ajouteObjet" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("o" variable (:type "ObjetPostal") (reparse-symbol formal_parameters) [452 465]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [428 497])
+                    ("volume" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [503 534]))                  
+                :type "class")
+                nil [45 536]))          
+      :file "SacPostal.java"
+      :pointmax 537
+      :fsize 536
+      :lastmodtime '(23202 29683 250988 93000)
+      :unmatched-syntax '((SEMICOLON 237 . 238) (GT 222 . 223) (PRIVATE 193 . 200) (LT 210 . 211) ($EOI 537 . 537) ($EOI 534 . 534) ($EOI 534 . 534) ($EOI 534 . 534) (SEMICOLON 237 . 238) (GT 222 . 223) (PRIVATE 193 . 200) (LT 210 . 211) ($EOI 534 . 534) ($EOI 533 . 533) ($EOI 533 . 533) ($EOI 533 . 533)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("poste" package nil nil [1 15])
+            ("Lettre" type
+               (:typemodifiers ("public")
+                :superclasses "ObjetPostal"
+                :members 
+                  ( ("urgente" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [68 92])
+                    ("tarifBase" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [97 141])
+                    ("type" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [146 190])
+                    ("Lettre" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("origine" variable (:type "String") (reparse-symbol formal_parameters) [210 224])
+                            ("destination" variable (:type "String") (reparse-symbol formal_parameters) [226 244])
+                            ("codePostal" variable (:type "String") (reparse-symbol formal_parameters) [250 267])
+                            ("poids" variable (:type "int") (reparse-symbol formal_parameters) [269 278])
+                            ("volume" variable (:type "float") (reparse-symbol formal_parameters) [280 292])
+                            ("tauxRecommandation" variable (:type "Recom") (reparse-symbol formal_parameters) [298 322])
+                            ("urgente" variable (:type "boolean") (reparse-symbol formal_parameters) [324 339]))                          )
+                        (reparse-symbol class_member_declaration) [196 457])
+                    ("tarifAffranchissement" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [467 604])
+                    ("tarifBase" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [609 650])
+                    ("tarifRemboursement" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [660 850])
+                    ("getType" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [860 904])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [909 1045]))                  
+                :type "class")
+                nil [17 1052]))          
+      :file "Lettre.java"
+      :pointmax 1053
+      :fsize 1052
+      :lastmodtime '(23202 29594 113124 872000)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("poste" package nil nil [1 15])
+            ("ObjetPostal" type
+               (:typemodifiers ("public" "abstract")
+                :members 
+                  ( ("origine" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [62 87])
+                    ("destination" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [92 121])
+                    ("codePostal" variable
+                       (:typemodifiers ("protected")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [126 154])
+                    ("poids" variable
+                       (:typemodifiers ("protected")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [159 179])
+                    ("volume" variable
+                       (:typemodifiers ("protected")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [184 207])
+                    ("tauxRecommandation" variable
+                       (:typemodifiers ("protected")
+                        :type "Recom")
+                        (reparse-symbol class_member_declaration) [212 247])
+                    ("ObjetPostal" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("origine" variable (:type "String") (reparse-symbol formal_parameters) [272 286])
+                            ("destination" variable (:type "String") (reparse-symbol formal_parameters) [288 306])
+                            ("codePostal" variable (:type "String") (reparse-symbol formal_parameters) [317 334])
+                            ("poids" variable (:type "int") (reparse-symbol formal_parameters) [336 345])
+                            ("volume" variable (:type "float") (reparse-symbol formal_parameters) [347 359])
+                            ("tauxRecommandation" variable (:type "Recom") (reparse-symbol formal_parameters) [370 394]))                          )
+                        (reparse-symbol class_member_declaration) [253 583])
+                    ("tarifAffranchissement" function
+                       (:typemodifiers ("public")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [593 820])
+                    ("tarifRemboursement" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [830 873])
+                    ("affichageDescription" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [878 953])
+                    ("tarifBase" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [958 992])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [997 1119])
+                    ("getType" function
+                       (:typemodifiers ("public" "abstract")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1124 1157]))                  
+                :type "class")
+                nil [17 1164]))          
+      :file "ObjetPostal.java"
+      :pointmax 1165
+      :fsize 1164
+      :lastmodtime '(23174 44832 817601 531000)
+      :unmatched-syntax nil))
+  :file "!home!abreton!Documents!Universite!S4!HLIN406!TD!poste!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

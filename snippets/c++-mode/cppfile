@@ -1,0 +1,15 @@
+# -*- mode: snippet -*-
+# name: Basic CPP File with iostream
+# key: cppfile
+# --
+#include <iostream>
+
+using namespace std;
+
+int main (int argc, char** argv) {
+
+    $0
+
+    return 0;
+
+}

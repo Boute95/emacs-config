@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: #+END_SRC
+# key: esrc
+# --
+#+END_SRC
+$0
+
+
