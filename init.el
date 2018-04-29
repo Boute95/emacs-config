@@ -1,7 +1,10 @@
+<<<<<<< HEAD
+=======
 ;; Added by Package.el.  This must come before configurations of
 ;; installed packages.  Don't delete this line.  If you don't want it,
 ;; just comment it out by adding a semicolon to the start of the line.
 ;; You may delete these explanatory comments.
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 (require 'package)
 (add-to-list 'package-archives
              '("melpa" . "https://melpa.org/packages/"))
@@ -12,6 +15,20 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+<<<<<<< HEAD
+ '(background-color "#202020")
+ '(background-mode dark)
+ '(cursor-color "#cccccc")
+ '(custom-enabled-themes (quote (liso)))
+ '(custom-safe-themes
+   (quote
+    ("3448e3f5d01b39ce75962328a5310438e4a19e76e4b691c21c8e04ca318a5f62" "07816e86f29cb5a696bb6e1675b41be0abe2f1f3e6bdf19c3ca33277ec5062b5" default)))
+ '(foreground-color "#cccccc")
+ '(frame-resize-pixelwise t)
+ '(size-indication-mode t)
+ '(tool-bar-mode nil))
+ '
+=======
  '(airline-utf-glyph-branch 57504)
  '(airline-utf-glyph-linenumber 57505)
  '(airline-utf-glyph-readonly 57506)
@@ -84,11 +101,17 @@
  '(scheme-program-name "racket")
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+<<<<<<< HEAD
+ '(default ((t (:family "Fantasque Sans Mono" :foundry "PfEd" :slant italic :weight normal :height 120 :width normal)))))
+
+
+=======
  '(default ((t (:family "Fantasque Sans Mono" :foundry "PfEd" :slant italic :weight normal :height 98 :width normal))))
  '(company-preview ((t (:background "#A6E22E" :foreground "black"))))
  '(company-preview-common ((t (:inherit company-preview :foreground "#F92672" :weight bold))))
@@ -96,6 +119,7 @@
  '(company-template-field ((t (:inherit company-preview))))
  '(company-tooltip ((t (:inherit company-preview))))
  '(company-tooltip-selection ((t (:inherit company-tooltip :background "green yellow" :box (:line-width 2 :color "grey75" :style released-button))))))
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 
 
 ;;;;;;;;;;;
@@ -108,14 +132,27 @@
 (add-hook 'prog-mode-hook 'linum-mode)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
+<<<<<<< HEAD
+(desktop-save-mode 1)
+
+
+
+=======
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 
 ;;;;;;;;;;;;
 ;; Backup ;;
 ;;;;;;;;;;;;
 (setq backup-directory-alist
+<<<<<<< HEAD
+`((".*" . , "~/Documents/emacs/backups")))
+(setq auto-save-file-name-transforms
+`((".*" , "~/Documents/emacs/backups")))
+=======
 `((".*" . , "~/Documents/Emacs/Backups")))
 (setq auto-save-file-name-transforms
 `((".*" , "~/Documents/Emacs/Backups")))
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 
 ;; (message "Deleting old backup files...")
 ;; (let ((week (* 60 60 24 7))
@@ -127,17 +164,42 @@
 ;; 	       (message "%s" file)
 ;; 	       (delete-file file))))
 
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 ;;;;;;;;;;;;;
 ;; Company ;;
 ;;;;;;;;;;;;;
 (require 'company)
 (add-hook 'after-init-hook 'global-company-mode)
 (add-to-list 'company-backends 'company-c-headers)
+<<<<<<< HEAD
+(setq company-auto-complete nil)
+(setq company-c-headers-path-system
+       (quote
+	("/usr/include/c++/7/" "/usr/include/" "/usr/local/include/")))
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 2)
+(define-key company-active-map [(tab)] 'company-complete)
+(define-key company-active-map (kbd "TAB") 'company-complete)
+
+
+
+
+
+;;;;;;;;;;;
+;; Irony ;;
+;;;;;;;;;;;
+=======
 (setq company-idle-delay 0)
 (define-key company-active-map [(tab)] 'company-complete)
 (define-key company-active-map (kbd "TAB") 'company-complete)
 
 ;; Irony
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 (require 'irony)
 (require 'company-irony)
 (add-hook 'c++-mode-hook 'irony-mode)
@@ -146,12 +208,32 @@
 (add-hook 'irony-mode-hook 'irony-cdb-autosetup-compile-options)
 (eval-after-load 'company
   '(add-to-list 'company-backends 'company-irony))
+<<<<<<< HEAD
+(setq irony-additional-clang-options (quote ("-std=c++11")))
+(setq irony-cdb-compilation-databases
+      (quote
+       (irony-cdb-json irony-cdb-clang-complete irony-cdb-libclang)))
+
+
+
+=======
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 
 ;;;;;;;;;;;;;;
 ;; Flycheck ;;
 ;;;;;;;;;;;;;;
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (eval-after-load 'flycheck
+<<<<<<< HEAD
+  '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
+
+
+
+
+;;;;;;;;;;;;;
+;; WebMode ;;
+;;;;;;;;;;;;;
+=======
       '(add-hook 'flycheck-mode-hook #'flycheck-irony-setup))
 
 ;;;;;;;;;;;;;;;
@@ -174,6 +256,7 @@
 ;;;;;;;;;;;;;;
 ;; web-mode ;;
 ;;;;;;;;;;;;;;
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
@@ -183,6 +266,8 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+<<<<<<< HEAD
+=======
 
 ;;;;;;;;;;;;;;
 ;; Org-mode ;;
@@ -236,3 +321,4 @@
 (desktop-read)
 (put 'upcase-region 'disabled nil)
 (put 'downcase-region 'disabled nil)
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f

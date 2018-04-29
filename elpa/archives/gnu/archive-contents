@@ -341,7 +341,11 @@
 	     ((:keywords "killing" "convenience")
 	      (:url . "https://github.com/leoliu/easy-kill"))])
  (ebdb .
+<<<<<<< HEAD
+       [(0 5 2)
+=======
        [(0 5)
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 	((emacs
 	  (25 1))
 	 (cl-lib
@@ -375,7 +379,11 @@
 	     ((:url . "http://elpa.gnu.org/packages/ediprolog.html")
 	      (:keywords "languages" "processes"))])
  (el-search .
+<<<<<<< HEAD
+	    [(1 6 5)
+=======
 	    [(1 6 3)
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 	     ((emacs
 	       (25))
 	      (stream
@@ -469,7 +477,11 @@
 	  ((:url . "https://github.com/leoliu/ggtags")
 	   (:keywords "tools" "convenience"))])
  (gited .
+<<<<<<< HEAD
+	[(0 4 3)
+=======
 	[(0 4 2)
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 	 ((emacs
 	   (24 4))
 	  (cl-lib
@@ -751,9 +763,15 @@
 	 ((:keywords "extensions" "lisp")
 	  (:url . "https://github.com/Malabarba/names"))])
  (nhexl-mode .
+<<<<<<< HEAD
+	     [(0 9)
+	      ((emacs
+		(24 4))
+=======
 	     [(0 2)
 	      ((emacs
 		(24))
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
 	       (cl-lib
 		(0 5)))
 	      "Minor mode to edit files via hex-dump format" single
@@ -796,7 +814,11 @@
 	     ((:url . "https://github.com/michael-heerdegen/on-screen.el")
 	      (:keywords "convenience"))])
  (org .
+<<<<<<< HEAD
+      [(9 1 12)
+=======
       [(9 1 9)
+>>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
        nil "Outline-based notes management and organizer" tar
        ((:keywords "outlines" "hypermedia" "calendar" "wp")
 	(:url . "http://elpa.gnu.org/packages/org.html"))])
