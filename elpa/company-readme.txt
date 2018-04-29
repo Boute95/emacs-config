@@ -16,13 +16,9 @@ To write your own backend, look at the documentation for `company-backends'.
 Here is a simple example completing "foo":
 
 (defun company-my-backend (command &optional arg &rest ignored)
-<<<<<<< HEAD
   (interactive (list 'interactive))
   (pcase command
     (`interactive (company-begin-backend 'company-my-backend))
-=======
-  (pcase command
->>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
     (`prefix (company-grab-symbol))
     (`candidates (list "foobar" "foobaz" "foobarbaz"))
     (`meta (format "This value is named %s" arg))))

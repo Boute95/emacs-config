@@ -1,17 +1,10 @@
 ;;; company-irony-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-<<<<<<< HEAD
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "company-irony" "company-irony.el" (23265 35405
-;;;;;;  233933 795000))
-=======
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
-
-;;;### (autoloads nil "company-irony" "company-irony.el" (23164 26148
-;;;;;;  34487 420000))
->>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
+;;;### (autoloads nil "company-irony" "company-irony.el" (23269 46490
+;;;;;;  753695 736000))
 ;;; Generated autoloads from company-irony.el
 
 (autoload 'company-irony "company-irony" "\

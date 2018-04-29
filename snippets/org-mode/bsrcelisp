@@ -1,6 +1,0 @@
-# -*- mode: snippet -*-
-# name: #+BEGIN_SRC emacs-lisp
-# key: bsrcelisp
-# --
-#+BEGIN_SRC emacs-lisp
-$0

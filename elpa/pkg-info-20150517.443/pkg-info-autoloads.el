@@ -1,17 +1,10 @@
 ;;; pkg-info-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
-<<<<<<< HEAD
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "pkg-info" "pkg-info.el" (23265 35468 850099
-;;;;;;  36000))
-=======
-(add-to-list 'load-path (directory-file-name (or (file-name-directory #$) (car load-path))))
-
-;;;### (autoloads nil "pkg-info" "pkg-info.el" (23174 49726 947633
-;;;;;;  32000))
->>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
+;;;### (autoloads nil "pkg-info" "pkg-info.el" (23269 46528 551225
+;;;;;;  430000))
 ;;; Generated autoloads from pkg-info.el
 
 (autoload 'pkg-info-library-original-version "pkg-info" "\

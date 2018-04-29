@@ -3,8 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "liso-theme" "liso-theme.el" (23265 35933 55318
-;;;;;;  0))
+;;;### (autoloads nil "liso-theme" "liso-theme.el" (23269 46717 740394
+;;;;;;  368000))
 ;;; Generated autoloads from liso-theme.el
 
 (when load-file-name (add-to-list 'custom-theme-load-path (file-name-as-directory (file-name-directory load-file-name))))

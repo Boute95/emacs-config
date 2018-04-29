@@ -2,20 +2,19 @@
 ;; --------------------------------------------------------------------------
 ;; Desktop File for Emacs
 ;; --------------------------------------------------------------------------
-<<<<<<< HEAD
-;; Created Sun Apr 29 13:55:54 2018
+;; Created Sun Apr 29 14:12:34 2018
 ;; Desktop file format version 206
 ;; Emacs version 24.5.1
 
 ;; Global section:
-(setq desktop-saved-frameset [frameset 1 (23269 45770 235621 451000) (desktop . "206") "abreton@abreton-Maximus-II-Formula" nil nil ((((font-backend xft x) (font . "-PfEd-Fantasque Sans Mono-normal-italic-normal-*-16-*-*-*-m-0-iso10646-1") (font-parameter . "Fantasque Sans Mono") (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (foreground-color . "#EDEDE1") (background-color . "#272C2E") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 12) (right-fringe . 12) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen . maximized) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 12) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "#E6CB00") (sticky) (environment) (frameset--id . "16E9-C8DD-FCF3-B335") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (visibility . t) (height . 58) (width . 235) (left . 0) (top . 30)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 14) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 68) (min-pixel-width . 160) (min-pixel-height-ignore . 34) (min-pixel-width-ignore . 112) (min-pixel-height-safe . 17) (min-pixel-width-safe . 32)) hc (pixel-width . 1920) (pixel-height . 976) (total-width . 240) (total-height . 57) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 956) (pixel-height . 976) (total-width . 119) (total-height . 57) (normal-height . 1.0) (normal-width . 0.4970414201183432) (buffer "testOverview.html" (selected) (hscroll . 0) (fringes 12 12 nil) (margins 3) (scroll-bars 12 2 t nil) (vscroll . 0) (dedicated) (point . 1010) (start . 303))) (leaf (last . t) (pixel-width . 964) (pixel-height . 976) (total-width . 121) (total-height . 57) (normal-height . 1.0) (normal-width . 0.5029585798816568) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 12 12 nil) (margins 3) (scroll-bars 12 2 t nil) (vscroll . 0) (dedicated) (point . 1668) (start . 1)))))])
+(setq desktop-saved-frameset [frameset 1 (23269 46770 656047 19000) (desktop . "206") "abreton@abreton-Maximus-II-Formula" nil nil ((((font-backend xft x) (font . "-DAMA-Ubuntu Mono-normal-normal-normal-*-17-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars . right) (foreground-color . "#EDEDE1") (background-color . "#272C2E") (mouse-color . "black") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 9) (right-fringe . 9) (scroll-bar-foreground) (scroll-bar-background) (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (fullscreen . maximized) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 12) (alpha) (horizontal-scroll-bars . t) (display-type . color) (background-mode . dark) (cursor-color . "#E6CB00") (sticky) (environment) (frameset--id . "56C4-07DD-58BA-0E7F") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (visibility . t) (height . 55) (width . 210) (left . 0) (top . 30)) ((min-height . 4) (min-width . 10) (min-height-ignore . 2) (min-width-ignore . 6) (min-height-safe . 1) (min-width-safe . 2) (min-pixel-height . 72) (min-pixel-width . 90) (min-pixel-height-ignore . 36) (min-pixel-width-ignore . 54) (min-pixel-height-safe . 18) (min-pixel-width-safe . 18)) leaf (pixel-width . 1920) (pixel-height . 975) (total-width . 213) (total-height . 54) (normal-height . 1.0) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 9 9 nil) (margins 3) (scroll-bars 12 2 t nil) (vscroll . 0) (dedicated) (point . 3860) (start . 2666))))])
 (setq desktop-missing-file-warning nil)
 (setq tags-file-name nil)
 (setq tags-table-list nil)
-(setq search-ring '("blend" "ble" "blend" "blen" "Poin" "blend" "generateClou" "generateClo" "numberOfClou" "write" "materia" "write" "gener" "getI" "genera" "web-mode"))
+(setq search-ring '("liso" "web" "irony" "compa" "company" "irony" "compa" "company"))
 (setq regexp-search-ring nil)
 (setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/init.el" "~/web/GalaxThree.js/js/GalaxThree.js" "~/web/GalaxThree.js/test/testOverview.html" "~/.emacs.d/init.el" "~/Documents/universite/s4/ter_gratte_ciel/src/main.cpp" "~/Documents/universite/s4/ter_gratte_ciel/src/CLA.cpp" "~/Documents/universite/s4/ter_gratte_ciel/README.md" "~/Documents/universite/s4/ter_gratte_ciel/src/Plateau.cpp" "~/Documents/universite/s4/ter_gratte_ciel/src/Moteur.cpp" "~/Documents/universite/s4/ter_gratte_ciel/TODO.org" "/etc/apt/sources.list.d/versable-ubuntu-elementary-update-xenial.list" "/etc/apt/sources.list.d/elementary.list" "~/.emacs.d/"))
+(setq file-name-history '("~/.emacs.d/init.el"))
 
 ;; Buffer section -- buffers listed in same order as in buffer list:
 (desktop-create-buffer 206
@@ -23,48 +22,20 @@
   "init.el"
   'emacs-lisp-mode
   '(company-mode flycheck-mode linum-mode)
-  1668
-  '(1154 nil)
+  3860
+  '(3860 nil)
   nil
   nil
   '((buffer-file-coding-system . prefer-utf-8-unix)))
 
 (desktop-create-buffer 206
-  "/home/abreton/web/GalaxThree.js/js/GalaxThree.js"
-  "GalaxThree.js"
-  'js-mode
-  '(company-mode flycheck-mode linum-mode)
-  2917
-  '(2918 nil)
   nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
+  "flycheck-irony-20160317.1536"
+  'dired-mode
+  '(company-mode)
+  271
+  '(nil nil)
+  t
+  '("/home/abreton/.emacs.d/elpa/flycheck-irony-20160317.1536/")
+  nil)
 
-(desktop-create-buffer 206
-  "/home/abreton/web/GalaxThree.js/test/testOverview.html"
-  "testOverview.html"
-  'web-mode
-  '(company-mode flycheck-mode linum-mode)
-  1010
-  '(391 nil)
-  nil
-  nil
-  '((buffer-file-coding-system . undecided-unix)))
-
-=======
-;; Created Fri Mar  9 15:17:58 2018
-;; Desktop file format version 208
-;; Emacs version 25.2.2
-
-;; Global section:
-(setq desktop-saved-frameset [frameset 1 (23202 38806 608124 39000) (desktop . "208") "abreton@abreton-HP-ProBook-6470b" nil nil ((((font-backend xft x) (font . "-PfEd-Fantasque Sans Mono-normal-italic-normal-*-13-*-*-*-m-0-iso10646-1") (font-parameter) (border-width . 0) (internal-border-width . 0) (right-divider-width . 0) (bottom-divider-width . 0) (vertical-scroll-bars) (horizontal-scroll-bars) (foreground-color . "#eff0f1") (background-color . "#232629") (mouse-color . "#eff0f1") (border-color . "black") (screen-gamma) (line-spacing) (left-fringe . 8) (right-fringe . 8) (scroll-bar-foreground . "#eff0f1") (scroll-bar-background . "#eff0f1") (menu-bar-lines . 1) (tool-bar-lines . 0) (title) (wait-for-wm . t) (tool-bar-position . top) (icon-type . t) (auto-raise) (auto-lower) (cursor-type . box) (scroll-bar-width . 0) (scroll-bar-height . 0) (alpha) (fullscreen . maximized) (display-type . color) (background-mode . dark) (cursor-color . "#eff0f1") (sticky) (environment) (powerline-cache) (frameset--id . "EC7F-2394-A1C7-4B31") (frameset--mini t . t) (modeline . t) (minibuffer . t) (unsplittable) (icon-name) (display . ":0") (explicit-name) (visibility . t) (height . 50) (width . 192) (left . 0) (top . 26)) ((min-height . 4) (min-width . 20) (min-height-ignore . 2) (min-width-ignore . 10) (min-height-safe . 1) (min-width-safe . 4) (min-pixel-height . 56) (min-pixel-width . 140) (min-pixel-height-ignore . 28) (min-pixel-width-ignore . 70) (min-pixel-height-safe . 14) (min-pixel-width-safe . 28)) hc (pixel-width . 1366) (pixel-height . 699) (total-width . 195) (total-height . 50) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 679) (pixel-height . 699) (total-width . 97) (total-height . 50) (normal-height . 1.0) (normal-width . 0.49826388888888884) (buffer "*scratch*" (selected . t) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1) (start . 1))) (leaf (last . t) (pixel-width . 687) (pixel-height . 699) (total-width . 98) (total-height . 50) (normal-height . 1.0) (normal-width . 0.5017361111111112) (buffer "*scratch*" (selected) (hscroll . 0) (fringes 8 8 nil) (margins nil) (scroll-bars nil 0 t nil 0 t) (vscroll . 0) (dedicated) (point . 1) (start . 1)))))])
-(setq desktop-missing-file-warning nil)
-(setq tags-file-name nil)
-(setq tags-table-list nil)
-(setq search-ring nil)
-(setq regexp-search-ring nil)
-(setq register-alist nil)
-(setq file-name-history '("~/.emacs.d/"))
-
-;; Buffer section -- buffers listed in same order as in buffer list:
->>>>>>> e2a8722d4389f2b9ef5ffa873f7087d8f53df54f
