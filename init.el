@@ -15,8 +15,15 @@
  '(custom-safe-themes
    (quote
     ("3448e3f5d01b39ce75962328a5310438e4a19e76e4b691c21c8e04ca318a5f62" "07816e86f29cb5a696bb6e1675b41be0abe2f1f3e6bdf19c3ca33277ec5062b5" default)))
+ '(desktop-path (quote ("./" "~/.emacs.d/" "~")))
+ '(desktop-save nil)
  '(foreground-color "#cccccc")
  '(frame-resize-pixelwise t)
+ '(horizontal-scroll-bar-mode nil)
+ '(inhibit-startup-screen t)
+ '(package-selected-packages
+   (quote
+    (yasnippet-snippets yasnippet web-mode liso-theme flycheck-irony company-irony company-c-headers)))
  '(size-indication-mode t)
  '(tool-bar-mode nil))
  '
@@ -26,21 +33,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Fantasque Sans Mono" :foundry "PfEd" :slant italic :weight normal :height 120 :width normal)))))
-
-
-
-;;;;;;;;;;;
-;; Other ;;
-;;;;;;;;;;;
-(global-set-key (kbd "S-<up>") 'windmove-up)
-(global-set-key (kbd "S-<down>") 'windmove-down)
-(global-set-key (kbd "S-<left>") 'windmove-left)
-(global-set-key (kbd "S-<right>") 'windmove-right)
-(add-hook 'prog-mode-hook 'linum-mode)
-(defalias 'yes-or-no-p 'y-or-n-p)
-(defalias 'list-buffers 'ibuffer)
-(desktop-save-mode 1)
-
 
 
 
@@ -117,6 +109,7 @@
 ;;;;;;;;;;;;;
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
@@ -124,4 +117,45 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Fantasque Sans Mono" :foundry "PfEd" :slant normal :weight normal :height 122 :width normal)))))
+(put 'upcase-region 'disabled nil)
 
+
+;;;;;;;;;;;;;;;
+;; yasnippet ;;
+;;;;;;;;;;;;;;;
+(add-hook 'c++-mode-hook #'yas-minor-mode)
+(add-hook 'c-mode-hook #'yas-minor-mode)
+(add-hook 'objc-mode-hook #'yas-minor-mode)
+(add-hook 'java-mode-hook #'yas-minor-mode)
+(add-hook 'web-mode-hook #'yas-minor-mode)
+(add-hook 'css-mode-hook #'yas-minor-mode)
+(add-hook 'js-mode-hook #'yas-minor-mode)
+(add-to-list 'load-path
+	     "~/.emacs.d/plugins/yasnippet")
+(eval-after-load 'yasnippet
+  '(progn
+     (define-key yas-minor-mode-map (kbd "TAB") nil)
+     (define-key yas-minor-mode-map (kbd "<tab>") nil)
+     (define-key yas-minor-mode-map [C-tab] 'yas-expand-from-trigger-key)))
+
+
+
+;;;;;;;;;;;
+;; Other ;;
+;;;;;;;;;;;
+(global-set-key (kbd "S-<up>") 'windmove-up)
+(global-set-key (kbd "S-<down>") 'windmove-down)
+(global-set-key (kbd "S-<left>") 'windmove-left)
+(global-set-key (kbd "S-<right>") 'windmove-right)
+(add-hook 'prog-mode-hook 'linum-mode)
+(defalias 'yes-or-no-p 'y-or-n-p)
+(defalias 'list-buffers 'ibuffer)
+
+
+(desktop-read)

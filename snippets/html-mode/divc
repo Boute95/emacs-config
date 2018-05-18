@@ -1,0 +1,8 @@
+# -*- mode: html-mode -*-
+# name: divc
+# key: divc
+# --
+
+<div class="$1" >
+     $2
+</div>
