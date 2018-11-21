@@ -68,7 +68,7 @@
        (quote
 	("/usr/include/c++/7/" "/usr/include/" "/usr/local/include/")))
 (setq company-idle-delay 0)
-(setq company-minimum-prefix-length 2)
+;;(setq company-minimum-prefix-length 2)
 (define-key company-active-map [(tab)] 'company-complete)
 (define-key company-active-map (kbd "TAB") 'company-complete)
 
@@ -117,6 +117,7 @@
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -129,6 +130,8 @@
 ;;;;;;;;;;;;;;;
 ;; yasnippet ;;
 ;;;;;;;;;;;;;;;
+(add-to-list 'load-path
+	     "~/.emacs.d/plugins/yasnippet")
 (add-hook 'c++-mode-hook #'yas-minor-mode)
 (add-hook 'c-mode-hook #'yas-minor-mode)
 (add-hook 'objc-mode-hook #'yas-minor-mode)
@@ -136,14 +139,19 @@
 (add-hook 'web-mode-hook #'yas-minor-mode)
 (add-hook 'css-mode-hook #'yas-minor-mode)
 (add-hook 'js-mode-hook #'yas-minor-mode)
-(add-to-list 'load-path
-	     "~/.emacs.d/plugins/yasnippet")
 (eval-after-load 'yasnippet
   '(progn
      (define-key yas-minor-mode-map (kbd "TAB") nil)
      (define-key yas-minor-mode-map (kbd "<tab>") nil)
      (define-key yas-minor-mode-map [C-tab] 'yas-expand-from-trigger-key)))
 
+
+;;;;;;;;;;;;;;;;;;;;;;
+;; Smooth scrolling ;;
+;;;;;;;;;;;;;;;;;;;;;;
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed t) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
 
 
 ;;;;;;;;;;;
@@ -154,8 +162,11 @@
 (global-set-key (kbd "S-<left>") 'windmove-left)
 (global-set-key (kbd "S-<right>") 'windmove-right)
 (add-hook 'prog-mode-hook 'linum-mode)
+(add-hook 'prog-mode-hook 'electric-pair-mode)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (defalias 'list-buffers 'ibuffer)
+(global-hl-line-mode)
+
 
 
 (desktop-read)
